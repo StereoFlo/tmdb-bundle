@@ -14,7 +14,7 @@ class Configuration implements ConfigurationInterface
      */
     public function getConfigTreeBuilder(): TreeBuilder
     {
-        $treeBuilder = new TreeBuilder('tmdb_api');
+        $treeBuilder = new TreeBuilder('tmdb');
 
         $treeBuilder
             ->getRootNode()
