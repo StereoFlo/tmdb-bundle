@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace StereoFlo\TmdbBundle;
+namespace Stereoflo\TmdbBundle;
 
 use TMDB\Credentials;
 use TMDB\Exception\InvalidParamException;

@@ -2,7 +2,7 @@
 
 declare(strict_types = 1);
 
-namespace StereoFlo\TmdbBundle;
+namespace Stereoflo\TmdbBundle;
 
 use Symfony\Contracts\HttpClient\Exception\ClientExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\DecodingExceptionInterface;
@@ -10,6 +10,7 @@ use Symfony\Contracts\HttpClient\Exception\RedirectionExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\ServerExceptionInterface;
 use Symfony\Contracts\HttpClient\Exception\TransportExceptionInterface;
 use TMDB\Exception\EmptyQueryParamException;
+use TMDB\Exception\InvalidParamException;
 use TMDB\Section\AbstractSection;
 
 class Service
@@ -25,14 +26,15 @@ class Service
     }
 
     /**
-     * @throws ClientExceptionInterface
+     * @return array<mixed, mixed>
      * @throws DecodingExceptionInterface
      * @throws RedirectionExceptionInterface
      * @throws ServerExceptionInterface
      * @throws TransportExceptionInterface
      * @throws EmptyQueryParamException
+     * @throws InvalidParamException
      *
-     * @return array<mixed, mixed>
+     * @throws ClientExceptionInterface
      */
     public function get(AbstractSection $abstractSection): array
     {

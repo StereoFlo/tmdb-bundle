@@ -19,7 +19,7 @@ class Configuration implements ConfigurationInterface
         $treeBuilder
             ->getRootNode()
             ->children()
-            ->scalarNode('api')->isRequired()->end()
+            ->scalarNode('api_key')->isRequired()->end()
             ->scalarNode('language')->isRequired()->end()
             ->end();
 

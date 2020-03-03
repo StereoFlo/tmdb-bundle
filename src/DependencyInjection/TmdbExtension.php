@@ -5,8 +5,8 @@ declare(strict_types = 1);
 namespace Stereoflo\TmdbBundle\DependencyInjection;
 
 use Exception;
-use StereoFlo\TmdbBundle\Factory;
-use StereoFlo\TmdbBundle\Service;
+use Stereoflo\TmdbBundle\Factory;
+use Stereoflo\TmdbBundle\Service;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
@@ -25,8 +25,8 @@ class TmdbExtension extends Extension
         $configuration = new Configuration();
         $config        = $this->processConfiguration($configuration, $configs);
 
-        $container->setParameter('tmdb_api.api_key', $config['api_key']);
-        $container->setParameter('tmdb_api.language', $config['language']);
+        $container->setParameter('tmdb.api_key', $config['api_key']);
+        $container->setParameter('tmdb.language', $config['language']);
 
         $loader = new YamlFileLoader($container, new FileLocator(__DIR__ . '/../Resources/config'));
         $loader->load('services.yaml');
@@ -37,13 +37,13 @@ class TmdbExtension extends Extension
     protected function manualServicesLoad(ContainerBuilder $container): void
     {
         $container
-            ->register('tmdb_api.factory', Factory::class)
-            ->setArgument('$apiKey', '%user.api_key%')
+            ->register('tmdb.factory', Factory::class)
+            ->setArgument('$apiKey', '%tmdb.language%')
             ->setArgument('$language', '%tmdb_api.language%');
 
         $container
-            ->register('tmdb_api.service', Service::class)
-            ->setArgument('$factory', new Reference('tmdb_api.factory'))
+            ->register('tmdb.service', Service::class)
+            ->setArgument('$factory', new Reference('tmdb.factory'))
             ->setAutowired(true);
     }
 }
