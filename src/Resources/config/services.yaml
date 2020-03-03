@@ -1,6 +1,6 @@
 services:
   Stereoflo\TmdbBundle\Factory:
-    alias: 'tmdb_api.factory'
+    alias: 'tmdb.factory'
 
   Stereoflo\TmdbBundle\Service:
-    alias: 'tmdb_api.service'
+    alias: 'tmdb.service'
