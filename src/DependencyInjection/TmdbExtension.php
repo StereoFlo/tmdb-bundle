@@ -38,7 +38,7 @@ class TmdbExtension extends Extension
     {
         $container
             ->register('tmdb.factory', Factory::class)
-            ->setArgument('$apiKey', '%tmdb.language%')
+            ->setArgument('$apiKey', '%tmdb.api_key%')
             ->setArgument('$language', '%tmdb.language%');
 
         $container
