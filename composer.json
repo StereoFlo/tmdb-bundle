@@ -1,0 +1,29 @@
+{
+  "name": "stereoflo/tmdb-bundle",
+  "license": "MIT",
+  "type": "symfony-bundle",
+  "description": "PHP client for TMDB",
+  "autoload": {
+    "psr-4": {
+      "Stereoflo\\TmdbBundle\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Stereoflo\\TmdbBundle\\Tests\\": "tests/"
+    }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "require": {
+    "symfony/http-client": "^4.4|^5.0",
+    "stereoflo/tmdb-api": "^2.0"
+  },
+  "require-dev": {
+    "symfony/framework-bundle": "^4.4|^5.0",
+    "phpunit/phpunit": "^8",
+    "consolidation/robo": "^1.0",
+    "friendsofphp/php-cs-fixer": "^2.16",
+    "phpstan/phpstan": "^0.12.5"
+  }
+}

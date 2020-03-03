@@ -1,0 +1,6 @@
+services:
+  StereoFlo\TmdbBundle\Factory:
+    alias: 'tmdb_api.factory'
+
+  StereoFlo\TmdbBundle\Service:
+    alias: 'tmdb_api.service'
