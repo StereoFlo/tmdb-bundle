@@ -104,16 +104,16 @@
         },
         {
             "name": "stereoflo/tmdb-api",
-            "version": "v2.0.0",
+            "version": "v2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/StereoFlo/tmdb-api.git",
-                "reference": "59b32e377c01b9a641d7eb9d108926b287dc2e11"
+                "reference": "db02eb31c88f3de8d448e76a2be0ea1a3d95b9a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/StereoFlo/tmdb-api/zipball/59b32e377c01b9a641d7eb9d108926b287dc2e11",
-                "reference": "59b32e377c01b9a641d7eb9d108926b287dc2e11",
+                "url": "https://api.github.com/repos/StereoFlo/tmdb-api/zipball/db02eb31c88f3de8d448e76a2be0ea1a3d95b9a7",
+                "reference": "db02eb31c88f3de8d448e76a2be0ea1a3d95b9a7",
                 "shasum": ""
             },
             "require": {
@@ -135,7 +135,7 @@
                 "MIT"
             ],
             "description": "desc",
-            "time": "2020-03-03T06:27:57+00:00"
+            "time": "2020-03-13T12:12:15+00:00"
         },
         {
             "name": "symfony/http-client",
@@ -1817,16 +1817,16 @@
         },
         {
             "name": "phpspec/prophecy",
-            "version": "v1.10.2",
+            "version": "v1.10.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpspec/prophecy.git",
-                "reference": "b4400efc9d206e83138e2bb97ed7f5b14b831cd9"
+                "reference": "451c3cd1418cf640de218914901e51b064abb093"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/b4400efc9d206e83138e2bb97ed7f5b14b831cd9",
-                "reference": "b4400efc9d206e83138e2bb97ed7f5b14b831cd9",
+                "url": "https://api.github.com/repos/phpspec/prophecy/zipball/451c3cd1418cf640de218914901e51b064abb093",
+                "reference": "451c3cd1418cf640de218914901e51b064abb093",
                 "shasum": ""
             },
             "require": {
@@ -1876,7 +1876,7 @@
                 "spy",
                 "stub"
             ],
-            "time": "2020-01-20T15:57:02+00:00"
+            "time": "2020-03-05T15:02:03+00:00"
         },
         {
             "name": "phpstan/phpstan",
